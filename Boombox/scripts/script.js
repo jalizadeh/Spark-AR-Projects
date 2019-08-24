@@ -12,6 +12,9 @@
 const Scene = require('Scene');
 const Animation = require('Animation');
 
+//We need to load in the touchgestures module to be able to detect touch events.
+const TouchGestures = require('TouchGestures');
+
 /*
 The following code finds the base_jnt object in the scene and stores it in a variable which we will use later to animate.
 
@@ -27,6 +30,9 @@ const base = sceneRoot.find('base_jnt');
 const speakerLeft = sceneRoot.find('speaker_left_jnt');
 const speakerRight = sceneRoot.find('speaker_right_jnt');
 
+
+//To move the boombox we're going to update the location of the plane tracker on which the boombox sits so we first need to access it in our script.
+const planeTracker = sceneRoot.find('planeTracker0');
 
 
 /*
@@ -115,3 +121,23 @@ const speakerRightTransform = speakerRight.transform;
 speakerRightTransform.scaleX = speakerAnimation;
 speakerRightTransform.scaleY = speakerAnimation;
 speakerRightTransform.scaleZ = speakerAnimation;
+
+
+//------------------------------------
+//Moving the boombox with pan gestures
+//------------------------------------
+
+
+/*
+The onPan() method returns an EventSource that we then subscribe to with a callback function that will run everytime a pan gesture is detected.
+
+We also pass the gesture as an argument to the callback function which we will use when moving the plane tracker. The gesture passed when subscribing to the onPan() EventSource is a PanGesture.
+*/
+TouchGestures.onPan().subscribe(function(gesture) {
+	/*
+	The trackPoint() method of the PlaneTracker class triggers new plane detection, updating the position of the planetracker.
+
+	We use the location and state of the pan gesture as the position that the plane tracker should be updated to, meaning that the planetracker moves to where the gesture is detected.
+	*/
+    planeTracker.trackPoint(gesture.location, gesture.state);
+});
