@@ -35,6 +35,10 @@ const speakerRight = sceneRoot.find('speaker_right_jnt');
 const planeTracker = sceneRoot.find('planeTracker0');
 
 
+//For scaling and rotating the boombox we're going to use the placer object. The reason we need to do this is because we're already using the base object for the scaling animation, and if we used it again here then it would override that animation.
+const placer = sceneRoot.find('placer');
+
+
 /*
 durationMilliseconds: The animation will last 0.4 seconds.
 loopCount: The animation will loop indefinitely.
@@ -140,4 +144,44 @@ TouchGestures.onPan().subscribe(function(gesture) {
 	We use the location and state of the pan gesture as the position that the plane tracker should be updated to, meaning that the planetracker moves to where the gesture is detected.
 	*/
     planeTracker.trackPoint(gesture.location, gesture.state);
+});
+
+
+
+//---------------------------------------
+//Scaling the boombox with pinch gestures
+//---------------------------------------
+
+
+//Now we have access to the placer we can store a reference to it's transform (like we did with the base) to use for updating the scale and rotation.
+const placerTransform = placer.transform;
+
+
+
+/*
+To scale the boombox we're going to subscribe to pinch gestures, the gesture you make with two fingers getting closer or further apart.
+
+The following code uses a slightly different subscription method that also allows us to capture signal values at the time the gesture is detected.
+
+The subscribeWithSnapshot() method allows us to capture additional 'snapshot' values which we will need to pass through to the callback function for updating the scale.
+*/
+TouchGestures.onPinch().subscribeWithSnapshot( {
+	/*
+	The values we want to pass to the callback function at the time of the pinch gesture are the current x, y and z scale values of the placerTransform. The reason we need to do this is because we want to change the scale (increase or decrease depending on the gesture) in relation to it's current scale.
+
+	A snapshot is a dictionary of signal values that can be accessed in the callback function by name.
+	*/
+	'lastScaleX' : placerTransform.scaleX,
+    'lastScaleY' : placerTransform.scaleY,
+    'lastScaleZ' : placerTransform.scaleZ 
+
+}, function (gesture, snapshot) {
+	/*
+	The current scale values passed from the snapshot can now be used in the callback function along with the scale from the pinch gesture to scale the placer.
+
+	Multiplying the snapshot values with the scale property of the PinchGesture gives the desired scaling effect.
+	*/
+	placerTransform.scaleX = gesture.scale.mul(snapshot.lastScaleX);
+    placerTransform.scaleY = gesture.scale.mul(snapshot.lastScaleY);
+    placerTransform.scaleZ = gesture.scale.mul(snapshot.lastScaleZ);
 });
