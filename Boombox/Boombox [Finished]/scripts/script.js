@@ -185,3 +185,23 @@ TouchGestures.onPinch().subscribeWithSnapshot( {
     placerTransform.scaleY = gesture.scale.mul(snapshot.lastScaleY);
     placerTransform.scaleZ = gesture.scale.mul(snapshot.lastScaleZ);
 });
+
+
+
+
+//-------------------------------------------
+//Rotating the boombox with rotation gestures
+//-------------------------------------------
+
+
+
+//To rotate the boombox we're going to subscribe to rotation gestures, a gesture made with two fingers rotating around each other.
+TouchGestures.onRotate().subscribeWithSnapshot( {
+	//We use subscribeWithSnapshot() to pass the y rotation value of the placerTransform (the axis we'll be rotating around) to the callback function.
+    'lastRotationY' : placerTransform.rotationY,
+
+}, function (gesture, snapshot) {
+	//In the callback function we multiply the RotateGesture rotation by -1 before adding it to the placerTransform to rotate the boombox. We multiply the gesture rotation by -1 to make sure the rotation happens in the correct direction.
+    const correctRotation = gesture.rotation.mul(-1);
+    placerTransform.rotationY = correctRotation.add(snapshot.lastRotationY);
+});
