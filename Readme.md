@@ -4,11 +4,17 @@ Here you find projects and samples which you can download and learn [Spark AR](h
 
 Have fun :)
 
+
+## Particle
+- Heart
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Heart)
+	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials/using-particles)
+
+
 ## Scripting
 - Boombox
 	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Boombox)
 	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/scripting/scripting-tutorial/)
-
 
 
 
