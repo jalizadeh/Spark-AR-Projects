@@ -7,7 +7,7 @@ Have fun :)
 
 ## Basics
 - Finding Your Way Around Spark AR Studio
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/01%20-%20Finding%20Your%20Way%20Around%20Spark%20AR%20Studio)
 	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/before-you-start/basics/finding-your-way-around/)
 
 
