@@ -7,21 +7,26 @@ Have fun :)
 
 ## Basics
 - Finding Your Way Around Spark AR Studio
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/01%20-%20Finding%20Your%20Way%20Around%20Spark%20AR%20Studio)
-	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/before-you-start/basics/finding-your-way-around/)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/01%20-%20Finding%20Your%20Way%20Around%20Spark%20AR%20Studio) / [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/before-you-start/basics/finding-your-way-around/)
+- Face Effects
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/02%20-%20Face%20Effects) / [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials/quick-start-guide)
 
 
 
 ## Particle
 - Heart
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Particles/Heart)
-	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials/using-particles)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Particles/Heart) / [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials/using-particles)
+
+
+## Segmentation
+- Segmentation and the Camera Texture
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Segmentation/) / [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials-and-samples/tutorials/segmentation-and-camera-texture)
+
 
 
 ## Scripting
 - Boombox
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Scripting/Boombox)
-	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/scripting/scripting-tutorial/)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Scripting/Boombox) / [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/scripting/scripting-tutorial/)
 
 
 
