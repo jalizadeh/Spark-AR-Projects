@@ -5,15 +5,22 @@ Here you find projects and samples which you can download and learn [Spark AR](h
 Have fun :)
 
 
+## Basics
+- Finding Your Way Around Spark AR Studio
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Basics/)
+	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/before-you-start/basics/finding-your-way-around/)
+
+
+
 ## Particle
 - Heart
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Heart)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Particles/Heart)
 	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/tutorials/using-particles)
 
 
 ## Scripting
 - Boombox
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Boombox)
+	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Scripting/Boombox)
 	- [Tutorial](https://sparkar.facebook.com/ar-studio/learn/documentation/scripting/scripting-tutorial/)
 
 
