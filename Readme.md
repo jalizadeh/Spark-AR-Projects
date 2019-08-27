@@ -13,7 +13,8 @@ Have fun :)
 
 
 ## Blinking Game
-	- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Blinking%20Game) / [Tutorial Part 1](https://www.youtube.com/watch?v=APWpLdvXaiE) / [Tutorial Part 2](https://www.youtube.com/watch?v=IDI6xi9z3Zk) / [Tutorial Part 3](https://www.youtube.com/watch?v=L_CoZ3XZAEA)
+- [GitHub](https://github.com/jalizadeh/Spark-AR-Projects/tree/master/Blinking%20Game)
+- [Tutorial Part 1](https://www.youtube.com/watch?v=APWpLdvXaiE) / [Tutorial Part 2](https://www.youtube.com/watch?v=IDI6xi9z3Zk) / [Tutorial Part 3](https://www.youtube.com/watch?v=L_CoZ3XZAEA)
 
 
 
