@@ -10,12 +10,17 @@
 // How to load in modules
 const Diagnostics = require('Diagnostics');
 const Scene = require('Scene');
+const Patches = require('Patches');
 
 // How to access scene objects (uncomment line below to activate)
-// const directionalLight = Scene.root.find('directionalLight0');
+var counterNumber = Scene.root.find('number');
+var scoreNumber = Patches.getScalarValue('score');
+
 
 // How to access class properties (uncomment line below to activate)
 // const directionalLightIntensity = directionalLight.intensity;
+
+counterNumber.text = scoreNumber.toString();
 
 // How to log messages to the console (uncomment line below to activate)
 // Diagnostics.log('Console message logged from the script.');
